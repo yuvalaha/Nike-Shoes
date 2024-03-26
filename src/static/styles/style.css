@@ -1,0 +1,258 @@
+/* General html styling */
+html,
+body {
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, red, gray, white);
+}
+
+.layout {
+    display: grid;
+    box-sizing: border-box;
+    height: 100%;
+    grid-template-rows: 15% 85%;
+}
+
+.layout,
+.layout>* {
+    border: 1px solid;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-custom{
+    background-color:  lightgreen !important;
+    
+}
+ .nav-background img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-left: -13px;
+    text-align: left;
+    margin-top: 2px;
+} 
+
+/* Home page styling */
+
+
+
+
+/* Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: lightskyblue;
+}
+
+
+/* BODY ITEMS */
+.item_1 img{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+}
+.item_2 img{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    opacity: 0.1;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    max-width: 1000px;
+    width: 100%;
+    z-index: 20;
+}
+.just_do_it p{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate(-50% -50%);
+    width: 200px;
+    line-height: 100px;
+    font-size: 100px;
+    font-weight: 600;
+    opacity: 0.1;
+    z-index: 100;
+}
+.main{
+    position: relative;
+    display: flex;
+    z-index: 100;
+}
+.left_col{
+    width: 50%;
+    padding-left: 70px;
+    padding-top: 40px;
+}
+.left_col .shoe_title p{
+    font-size: 3.2vw;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.line hr{
+    border: 1px solid #222;
+    width: 200px;
+    margin: 25px 0 35px 0;
+}
+.left_col .shoe_description p{
+    font-family: 'Cascadia Code',sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 80px 0 0;
+}
+.cart_btn{
+    font-weight: 600;
+    width: 130px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.price{
+    font-family: 'Cascadia Code',sans-serif;
+    font-weight: 500;
+}
+.shop_box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 80px;
+    height: 100%;
+    max-height: 30vh;
+}
+.shop_item_container{
+    position: relative;
+    background: red;
+    width: 200px;
+    height: 150px;
+    border-radius: 40px;
+    padding: 80px 20px 0 20px;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.shoe_img_box .shoe_img{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 130px;
+    transform: translate(-50%, -50%) rotate(-40deg);
+    transition: .3s ease-in-out;
+}
+.shoe_name_price{
+    display: flex;
+    justify-content: space-between;
+}
+.shoe_name_price h3{
+    font-family: Impact;
+    font-weight: 400;
+    width: 60px;
+}
+
+
+.shop_item_container:hover .shoe_img{
+    top: 5%;
+    transform: translate(-50%, -50%) rotate(-43deg);
+}
+
+.featured_img{
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    width: 200px;
+    transform: translate(-70%, -70%) rotate(-35deg);
+    animation: featuredImg 2s;
+}
+
+
+
+
+.active {
+    font-family: 'Comic Sans MS';
+    color: antiquewhite !important;
+    font-weight: bold;
+}
+li{
+    text-align: left;
+    font-size: larger;
+}
+
+.details {
+    justify-content: center;
+    align-items: center;
+}
+
+.fancy-form {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.fancy-form input, .fancy-form select {
+    margin-bottom: 20px;
+}
+
+ul.errorlist {
+    color: aqua;
+}
+
+.auth{
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.messages {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.messages >.success{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+.messages >.error{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+
+.shoe-img{
+    height: 300px;
+    width: 300px;
+}

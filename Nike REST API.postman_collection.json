@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "7c3be191-95f7-44e8-82ea-ea2734140933",
+		"name": "Nike REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33475476"
+	},
+	"item": [
+		{
+			"name": "Get all clothes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/clothes",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"clothes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one cloth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/clothes/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"clothes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add cloth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"manufacture\": \"New Air Jordan mid\",\r\n    \"price\": \"135.00\",\r\n    \"type\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/clothes/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"clothes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit cloth",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"manufacture\": \"Amazing New Air Jordan mid\",\r\n    \"price\": \"136.50\",\r\n    \"type\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/clothes/edit/11",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"clothes",
+						"edit",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cloth",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"manufacture\": \"Amazing New Air Jordan mid\",\r\n    \"price\": \"136.50\",\r\n    \"type\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/clothes/delete/11",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"clothes",
+						"delete",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

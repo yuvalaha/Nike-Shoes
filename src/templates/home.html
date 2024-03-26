@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Nike Shoes Store | Home
+{% endblock title %}
+
+{% block content %}
+
+
+
+<div class="body_items">
+    <!-- <div class="item_1">
+        <img src="{% static 'images/6.png' %}" alt="">
+    </div> -->
+    <div class="item_2">
+        <img src="{% static 'images/logo.png' %}" alt="">
+    </div>
+    <div class="just_do_it">
+        <img src="{% static 'images/1.png' %}" class="featured_img" alt="">
+        <p>Just
+           Do
+           It
+        </p>
+    </div>
+</div>    
+<div class="container">
+    <div class="main">
+        <div class="left_col">
+            <div class="shoe_title">
+                <p>Nike Official Shoes Store</p>
+            </div>
+            <div class="line">
+                <hr>
+            </div>
+            <div class="shoe_description">
+                <p>Welcome to our Nike Shoes Store, where style meets performance! We offer a wide selection of Nike footwear, ranging from iconic classics to the latest releases, ensuring that every customer can find the perfect pair to suit their needs and preferences</p>
+            </div>
+
+            <div class="shop_box">
+                <div class="shop_item_container">
+                    <div href="{% url 'items' %}" class="shoe_img_box">
+                        <a href="{% url 'items' %}">
+                         <img  src="{% static 'images/2.png' %}" class="shoe_img">
+                         </a>
+                    </div>
+                    <div class="shoe_name_price">
+                         <h3>Nike Air Max</h3>
+                         <p>$169.99</p>
+                    </div>
+                   
+                </div>
+                <div class="shop_item_container">
+                    <div class="shoe_img_box">
+                        <a href="{% url 'items' %}">
+                         <img src="{% static 'images/3.png' %}" class="shoe_img">
+                        </a>
+                    </div>
+                    <div class="shoe_name_price">
+                        
+                         <h3>Nike Air Force</h3>
+                         <p>$172.99</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+{% endblock content %}

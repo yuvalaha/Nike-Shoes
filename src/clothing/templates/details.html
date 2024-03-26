@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+
+Nike | Details
+
+{% endblock title %}
+
+{% block content %}
+<h3 class="mt-3 pt-4 pb-4">Item Details:</h3>
+<div class="card pt-3 w-25 mx-auto details">
+    <ul>
+        <li>Type: {{item.type.name}}</li>
+        <li>Model: 🏀{{item.model}}</li>
+        <li>Price: ${{item.price}}</li>
+    </ul>
+</div>
+<img class="mt-5 shoe-img" src="{% static 'images/shoes/' %}{{ item.model }}.png" alt="">
+{% endblock content %}

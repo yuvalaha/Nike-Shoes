@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+
+Nike | Clothing
+
+{% endblock title %}
+
+{% block content %}
+<h1 class="mt-3">Here are some of our amazing items:</h1>
+<div class="d-flex justify-content-center">
+    <table class="mt-4 table table-striped table-hover table-dark table-bordered w-75">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Full Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for item in items%}
+            <tr>
+                <td>{{ item.type.name }}</td>
+                <td>{{ item.model }}</td>
+                <td>${{ item.price }}</td>
+                <td>
+                    <a href="{% url 'details' item.id %}">📃</a>
+                    <span> | </span>
+                    <a href="{% url 'edit' item.id %}">✏️</a>
+                    <span> | </span>
+                    <a onclick="confirmDelete(event)" href="{% url 'delete' item.id %}">❌</a>
+                </td>
+
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+{% endblock content %}

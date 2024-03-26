@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+
+Nike | New
+
+{% endblock title %}
+
+{% block content %}
+<h3>Add new item</h3>
+<form class="fancy-form" method="post">
+
+    <!-- Prevent CSRF attack: -->
+    {% csrf_token %}
+
+    {{ form }}
+
+    <button class="btn btn-primary w-100">Add Item</button>
+</form>
+{% endblock content %}
